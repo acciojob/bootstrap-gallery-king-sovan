@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .card-img-top {
+            transition: transform 0.3s ease;
+        }
+        .card-img-top:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Cards Gallery</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" data-lightbox="gallery" data-title="Image 1">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top" alt="Image 1">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Mountain Landscape</h6>
+                        <p class="card-text">A beautiful view of mountains and a lake.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" data-lightbox="gallery" data-title="Image 2">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top" alt="Image 2">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Coastal Sunset</h6>
+                        <p class="card-text">A breathtaking sunset over the ocean.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" data-lightbox="gallery" data-title="Image 3">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-img-top" alt="Image 3">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Forest Path</h6>
+                        <p class="card-text">A serene path through a lush forest.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" data-lightbox="gallery" data-title="Image 4">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-img-top" alt="Image 4">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Desert Landscape</h6>
+                        <p class="card-text">A vast desert with rolling sand dunes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" data-lightbox="gallery" data-title="Image 5">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-img-top" alt="Image 5">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Autumn Colors</h6>
+                        <p class="card-text">A vibrant display of fall foliage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" data-lightbox="gallery" data-title="Image 6">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-img-top" alt="Image 6">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Tropical Beach</h6>
+                        <p class="card-text">A pristine beach with crystal clear water.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
-
 </html>
